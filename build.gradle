@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'ru.ainur'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+}
+
+application {
+    mainClass = 'ru.ainur.Main'
+}
+
+test {
+    useJUnitPlatform()
+}
